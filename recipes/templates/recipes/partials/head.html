@@ -69,6 +69,7 @@
             font-size: 1.6rem;
             font-family: var(--font-primary);
             background: var(--color-gray-1);
+            color: var(--color-dark-text);
         }
 
         h1,
@@ -177,6 +178,62 @@
         .recipe-list-item:hover {
             max-width: 64rem;
             transform: scale(1.03);
+            box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.5);
         }
+
+        .recipe-title-container {
+            padding: var(--spacing-gutter-medium);
+        }
+
+        .recipe-author {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
+
+        .recipe-author a {
+            color: var(--color-primary);
+            transition: all 300ms ease-in-out;
+            text-decoration: none;
+        }
+
+        .recipe-author a:hover {
+            color: var(--color-primary-hover);
+        }
+
+        .recipe-author-item {
+            color: var(--color-gray-5);
+            margin-right: 2rem;
+        }
+
+        .recipe-content {
+            font-size: 1.6rem;
+        }
+
+        .recipe-meta-container {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            padding: var(--spacing-gutter-medium);
+            background: var(--color-gray-1);
+        }
+
+        .recipe-footer {
+            padding: var(--spacing-gutter-medium);
+            flex-flow: column nowrap;
+            text-align: center;
+            background: var(--color-primary-dark);
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+
+        .recipe-footer a {
+            text-decoration: none;
+            color: var(--color-white);
+        }
+
+        .recipe-footer a:hover {
+            color: var(--color-primary);
+        
+
     </style>
 </head>
